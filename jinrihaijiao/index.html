@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日海角大陆回家方式-海角大陆回家路线_海角回家通道与返回步骤</title>
+<meta name="description" content="今日海角大陆回家方式主题首页，梳理海角大陆回家的常见路线、通道入口、返回步骤与注意事项，帮助访问者快速找到适合自己的回家路径。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2a3d'/%3E%3Cpath d='M32 12 L46 30 L38 30 L38 50 L26 50 L26 30 L18 30 Z' fill='%23f5c56b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#12222e;
+  --ink-soft:#3f5564;
+  --sea:#0f2a3d;
+  --sea-deep:#0a1c2a;
+  --gold:#f5c56b;
+  --gold-deep:#d9a544;
+  --sand:#f7f1e4;
+  --paper:#fffdf8;
+  --line:#e3dac6;
+  --radius:16px;
+  --shadow:0 12px 32px rgba(15,42,61,.10);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--sand);
+  line-height:1.8;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img,svg{display:block;max-width:100%;}
+.wrap{width:min(1120px,92%);margin:0 auto;}
+
+/* ---------- header ---------- */
+.site-head{
+  position:sticky;top:0;z-index:30;
+  background:rgba(15,42,61,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(245,197,107,.22);
+}
+.head-inner{display:flex;align-items:center;gap:24px;padding:14px 0;flex-wrap:wrap;}
+.brand{display:flex;align-items:center;gap:12px;color:var(--paper);}
+.brand-mark{
+  width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(150deg,#1d4a68,#0a1c2a);
+  border:1px solid rgba(245,197,107,.45);
+  display:grid;place-items:center;flex:none;
+}
+.brand-name{
+  font-size:17px;font-weight:700;letter-spacing:.5px;
+  color:var(--gold);
+}
+.head-nav{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap;}
+.head-nav a{
+  color:#dbe6ee;font-size:14px;padding:7px 13px;border-radius:999px;
+  transition:.2s;
+}
+.head-nav a:hover{background:rgba(245,197,107,.16);color:var(--gold);}
+
+/* ---------- hero ---------- */
+.hero{
+  background:
+    radial-gradient(circle at 82% 18%,rgba(245,197,107,.16),transparent 42%),
+    radial-gradient(circle at 8% 88%,rgba(56,132,173,.28),transparent 46%),
+    linear-gradient(160deg,#0f2a3d,#0a1c2a 70%);
+  color:var(--paper);
+  padding:64px 0 72px;
+  position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;inset:auto 0 -1px 0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(245,197,107,.5),transparent);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;letter-spacing:2px;color:var(--gold);
+  border:1px solid rgba(245,197,107,.4);border-radius:999px;
+  padding:5px 14px;margin-bottom:22px;
+}
+.hero h1{
+  font-size:clamp(28px,4.2vw,46px);
+  line-height:1.28;margin:0 0 18px;font-weight:800;letter-spacing:1px;
+}
+.hero h1 .hl{color:var(--gold);}
+.hero-lead{
+  font-size:16px;color:#c9d8e3;max-width:36em;margin:0 0 28px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:12px 26px;border-radius:999px;font-size:15px;font-weight:600;
+  transition:.2s;border:1px solid transparent;
+}
+.btn-primary{background:var(--gold);color:#1a2b1f;}
+.btn-primary:hover{background:var(--gold-deep);transform:translateY(-1px);}
+.btn-ghost{border-color:rgba(245,197,107,.55);color:var(--gold);}
+.btn-ghost:hover{background:rgba(245,197,107,.12);}
+.hero-note{margin-top:22px;font-size:13px;color:#8ea4b4;}
+
+.hero-art{position:relative;}
+.hero-art svg{width:100%;height:auto;}
+
+/* ---------- quick stats ---------- */
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+  background:var(--paper);border-radius:var(--radius);
+  box-shadow:var(--shadow);margin-top:-34px;position:relative;z-index:5;
+  overflow:hidden;
+}
+.stat{padding:22px 26px;border-right:1px solid var(--line);}
+.stat:last-child{border-right:none;}
+.stat b{display:block;font-size:22px;color:var(--sea);letter-spacing:.5px;}
+.stat span{font-size:13px;color:var(--ink-soft);}
+
+/* ---------- section base ---------- */
+section{padding:64px 0;}
+.sec-head{margin-bottom:34px;}
+.sec-kicker{
+  font-size:13px;letter-spacing:2px;color:var(--gold-deep);
+  font-weight:700;margin-bottom:8px;
+}
+.sec-head h2{
+  font-size:clamp(22px,2.6vw,30px);margin:0 0 10px;font-weight:800;
+  color:var(--sea);letter-spacing:.5px;
+}
+.sec-head p{margin:0;color:var(--ink-soft);max-width:44em;font-size:15px;}
+
+/* ---------- route cards ---------- */
+.route-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.route-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 24px 24px;position:relative;transition:.25s;
+  display:flex;flex-direction:column;
+}
+.route-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(245,197,107,.7);}
+.route-tag{
+  font-size:12px;font-weight:700;letter-spacing:1px;color:var(--sea);
+  background:rgba(245,197,107,.28);border-radius:6px;padding:3px 9px;
+  align-self:flex-start;margin-bottom:14px;
+}
+.route-card h3{font-size:18px;margin:0 0 10px;color:var(--sea);}
+.route-card p{margin:0 0 16px;font-size:14.5px;color:var(--ink-soft);flex:1;}
+.route-meta{
+  font-size:13px;color:var(--ink-soft);border-top:1px dashed var(--line);
+  padding-top:12px;display:flex;justify-content:space-between;gap:8px;
+}
+.route-meta strong{color:var(--sea);}
+
+/* ---------- steps ---------- */
+.steps-sec{background:var(--paper);}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step;}
+.step{
+  position:relative;padding:26px 20px 22px;border-radius:var(--radius);
+  background:var(--sand);border:1px solid var(--line);
+}
+.step::before{
+  counter-increment:step;content:"0" counter(step);
+  font-size:13px;font-weight:800;color:var(--gold-deep);letter-spacing:1px;
+}
+.step h3{font-size:16px;margin:8px 0 8px;color:var(--sea);}
+.step p{margin:0;font-size:14px;color:var(--ink-soft);}
+
+/* ---------- two column detail ---------- */
+.detail-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start;}
+.prose p{margin:0 0 16px;color:var(--ink-soft);font-size:15px;}
+.prose h3{font-size:18px;color:var(--sea);margin:26px 0 10px;}
+.prose h3:first-child{margin-top:0;}
+.checklist{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 24px;box-shadow:var(--shadow);
+}
+.checklist h3{margin:0 0 16px;font-size:17px;color:var(--sea);}
+.checklist ul{list-style:none;margin:0;padding:0;}
+.checklist li{
+  display:flex;gap:10px;align-items:flex-start;
+  font-size:14.5px;color:var(--ink-soft);padding:9px 0;border-bottom:1px dashed var(--line);
+}
+.checklist li:last-child{border-bottom:none;}
+.checklist li svg{flex:none;margin-top:5px;}
+
+/* ---------- faq ---------- */
+.faq-sec{background:linear-gradient(180deg,#f2ead9,#f7f1e4);}
+.faq-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.faq-item{
+  background:var(--paper);border:1px solid var(--line);border-radius:14px;
+  padding:20px 22px;
+}
+.faq-item h3{margin:0 0 8px;font-size:15.5px;color:var(--sea);}
+.faq-item p{margin:0;font-size:14px;color:var(--ink-soft);}
+
+/* ---------- download ---------- */
+.download-sec{padding:56px 0 68px;}
+.dl-box{
+  background:linear-gradient(150deg,#0f2a3d,#0a1c2a);
+  border-radius:22px;padding:44px 40px;color:var(--paper);
+  display:flex;align-items:center;gap:36px;flex-wrap:wrap;
+  border:1px solid rgba(245,197,107,.25);
+  position:relative;overflow:hidden;
+}
+.dl-box::before{
+  content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;
+  border-radius:50%;background:radial-gradient(circle,rgba(245,197,107,.18),transparent 70%);
+}
+.dl-text{flex:1;min-width:260px;position:relative;}
+.dl-text h2{margin:0 0 10px;font-size:24px;color:var(--gold);}
+.dl-text p{margin:0;color:#c3d2dd;font-size:14.5px;max-width:40em;}
+.btn-dl{
+  background:var(--gold);color:#1a2b1f;position:relative;
+  pointer-events:none;opacity:.92;
+}
+
+/* ---------- footer ---------- */
+.site-foot{
+  background:var(--sea-deep);color:#9fb3c2;padding:46px 0 30px;font-size:14px;
+}
+.foot-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.1);}
+.foot-brand{display:flex;align-items:center;gap:12px;color:var(--gold);font-weight:700;font-size:16px;}
+.foot-links{display:flex;gap:22px;flex-wrap:wrap;}
+.foot-links a:hover{color:var(--gold);}
+.foot-bottom{padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:#7b93a4;}
+
+/* ---------- responsive ---------- */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:36px;}
+  .hero-art{max-width:420px;margin:0 auto;}
+  .stats{grid-template-columns:1fr;margin-top:-24px;}
+  .stat{border-right:none;border-bottom:1px solid var(--line);}
+  .stat:last-child{border-bottom:none;}
+  .route-grid{grid-template-columns:1fr 1fr;}
+  .steps{grid-template-columns:1fr 1fr;}
+  .detail-grid{grid-template-columns:1fr;}
+  .faq-list{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  body{font-size:15px;}
+  .head-inner{padding:12px 0;gap:10px;}
+  .brand-name{font-size:15px;}
+  .head-nav{gap:0;width:100%;margin-left:0;justify-content:flex-start;}
+  .head-nav a{padding:6px 10px;font-size:13px;}
+  .hero{padding:44px 0 52px;}
+  .hero h1{letter-spacing:.5px;}
+  .hero-lead{font-size:15px;}
+  .btn{padding:11px 20px;font-size:14px;}
+  section{padding:48px 0;}
+  .route-grid,.steps{grid-template-columns:1fr;}
+  .dl-box{padding:32px 24px;gap:24px;}
+  .dl-text h2{font-size:21px;}
+  .foot-top{flex-direction:column;gap:20px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top" aria-label="今日海角大陆回家方式 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3 L19 12 L15.5 12 L15.5 21 L8.5 21 L8.5 12 L5 12 Z" fill="#f5c56b"/>
+        </svg>
+      </span>
+      <span class="brand-name">今日海角大陆回家方式</span>
+    </a>
+    <nav class="head-nav" aria-label="主导航">
+      <a href="#routes">回家路线</a>
+      <a href="#steps">返回步骤</a>
+      <a href="#detail">通道说明</a>
+      <a href="#faq">常见疑问</a>
+      <a href="#download">下载入口</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">海角大陆 · 回家路径</span>
+        <h1 id="hero-title">今日海角大陆回家方式</h1>
+        <p class="hero-lead">把散落的回家线索收拢在一页：先看清几条主要通道，再按步骤走完返回流程。今日海角大陆回家方式并非单一答案，路线选择、入口确认与到达后的收尾，都属于这套回家方式的一部分。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#routes">查看回家路线</a>
+          <a class="btn btn-ghost" href="#steps">按步骤返回</a>
+        </div>
+        <p class="hero-note">页面内容围绕回家方式本身展开，路线与步骤以当前整理的资料范围为限。</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 360 300" role="presentation">
+          <defs>
+            <linearGradient id="seaG" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1d4a68"/>
+              <stop offset="1" stop-color="#0a1c2a"/>
+            </linearGradient>
+          </defs>
+          <circle cx="180" cy="150" r="128" fill="none" stroke="rgba(245,197,107,.25)" stroke-width="1.5" stroke-dasharray="4 9"/>
+          <circle cx="180" cy="150" r="92" fill="none" stroke="rgba(245,197,107,.18)" stroke-width="1.5"/>
+          <path d="M180 44 L228 150 L180 256 L132 150 Z" fill="url(#seaG)" stroke="rgba(245,197,107,.5)" stroke-width="1.5"/>
+          <path d="M180 74 L206 150 L180 226 L154 150 Z" fill="rgba(245,197,107,.14)"/>
+          <path d="M180 106 L180 194" stroke="#f5c56b" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 7"/>
+          <circle cx="180" cy="100" r="6" fill="#f5c56b"/>
+          <circle cx="180" cy="200" r="4" fill="rgba(245,197,107,.7)"/>
+          <path d="M60 226 q24 -14 48 0 t48 0 t48 0 t48 0" fill="none" stroke="rgba(195,210,221,.35)" stroke-width="1.5"/>
+          <path d="M60 244 q24 -14 48 0 t48 0 t48 0 t48 0" fill="none" stroke="rgba(195,210,221,.2)" stroke-width="1.5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>3 种</b><span>常见回家路线类型</span></div>
+      <div class="stat"><b>4 步</b><span>标准返回流程</span></div>
+      <div class="stat"><b>1 页</b><span>核心入口与说明集中呈现</span></div>
+    </div>
+  </div>
+
+  <!-- ROUTES -->
+  <section id="routes">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">回家路线</div>
+        <h2>先分清路线，再谈今日海角大陆回家方式</h2>
+        <p>不同访问者所处的状态不同，回家的第一件事不是急着操作，而是判断自己属于哪一类路线。下面三类路线覆盖了大部分常见情形，选择时以当前可用通道为准。</p>
+      </div>
+      <div class="route-grid">
+        <article class="route-card">
+          <span class="route-tag">常规通道</span>
+          <h3>主通道直达</h3>
+          <p>适合已经确认入口地址、网络环境稳定的访问者。主通道的优势在于路径最短，回家方式直接，中途环节少，出错后也容易回退重来。</p>
+          <div class="route-meta"><span>适用：日常返回</span><strong>步骤最少</strong></div>
+        </article>
+        <article class="route-card">
+          <span class="route-tag">备用通道</span>
+          <h3>备用入口切换</h3>
+          <p>当主通道提示异常或长时间无响应时，可切换备用入口。备用通道的回家方式核心是“换一条路”，入口信息应来自可靠来源，不要临时拼凑。</p>
+          <div class="route-meta"><span>适用：主通道受阻</span><strong>需核对入口</strong></div>
+        </article>
+        <article class="route-card">
+          <span class="route-tag">分步返回</span>
+          <h3>分段路径回接</h3>
+          <p>若一次直达不成功，可把回家方式拆成几个小段，逐段确认位置后再继续。分段的好处是每一步都有反馈，出现问题能定位到具体环节。</p>
+          <div class="route-meta"><span>适用：路径不稳定</span><strong>过程可追溯</strong></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section id="steps" class="steps-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">返回步骤</div>
+        <h2>今日海角大陆回家方式的四步流程</h2>
+        <p>无论选择哪条路线，返回动作都可以归纳为确认、进入、核对、收尾四个环节。把顺序走稳，比反复尝试更有效率。</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <h3>确认入口</h3>
+          <p>先核对当前使用的入口是否与记录一致，地址、端口与通道名称三项对齐后再动手。</p>
+        </article>
+        <article class="step">
+          <h3>发起返回</h3>
+          <p>按选定路线进入，保持页面不中断，避免同时开启多个回家动作造成互相干扰。</p>
+        </article>
+        <article class="step">
+          <h3>核对状态</h3>
+          <p>到达后确认所处位置与预期一致，若提示异常，记录提示内容再决定是否切换通道。</p>
+        </article>
+        <article class="step">
+          <h3>完成收尾</h3>
+          <p>回家成功后保存当前可用入口，关闭多余页面，为下一次顺利返回留下清晰的记录。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAIL -->
+  <section id="detail">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">通道说明</div>
+        <h2>理解回家方式的判断依据</h2>
+        <p>今日海角大陆回家方式的差异，往往不在操作本身，而在对通道状态的理解。以下内容帮助你把“看起来能进”和“真正回到位”区分开。</p>
+      </div>
+      <div class="detail-grid">
+        <div class="prose">
+          <h3>回家方式的关键在于通道是否稳定</h3>
+          <p>同样是回家，通道稳定时一步即可完成，通道波动时则需要备用入口配合。判断稳定性可以看两点：返回过程是否连续、到达后状态是否保持一致。两者都满足，说明当前通道可以继续使用。</p>
+          <h3>入口信息需要可追溯</h3>
+          <p>今日海角大陆回家方式里最容易出错的环节，是入口来源不明。临时拼接的地址可能指向错误位置，导致多次尝试仍无法返回。建议只使用记录在案、可回查的入口，并在切换后同步更新记录。</p>
+          <h3>分段返回降低试错成本</h3>
+          <p>当一次直达失败时，把回家方式拆成小段是更稳妥的做法：先确认第一段是否通过，再决定是否继续。这样即使中途受阻，也能明确问题出在哪一段，而不是全盘重来。</p>
+          <p>需要说明的是，页面中的路线与步骤是对常见回家方式的归纳，具体可用性仍取决于当时的通道状态。遇到持续异常时，优先核对入口与网络环境，再考虑更换路线。</p>
+        </div>
+        <aside class="checklist" aria-labelledby="check-title">
+          <h3 id="check-title">回家前自查清单</h3>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 L9.5 18 L20 6.5" stroke="#d9a544" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>入口地址与记录一致，来源可回查</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 L9.5 18 L20 6.5" stroke="#d9a544" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>网络环境稳定，未频繁切换连接</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 L9.5 18 L20 6.5" stroke="#d9a544" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>只开启一个回家动作，避免并行干扰</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 L9.5 18 L20 6.5" stroke="#d9a544" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>备用入口已提前准备，可随时切换</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 L9.5 18 L20 6.5" stroke="#d9a544" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>异常提示已记录，便于定位问题环节</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">常见疑问</div>
+        <h2>关于今日海角大陆回家方式的几个问题</h2>
+        <p>访问者最常遇到的疑问集中在路线选择与失败处理上，以下回答按回家方式的实际操作顺序整理。</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>主通道进不去，是否要立即换路线？</h3>
+          <p>不建议立刻更换。先确认入口与网络状态，排除记录过期或连接抖动，再考虑切换备用通道，这样能减少无效尝试。</p>
+        </div>
+        <div class="faq-item">
+          <h3>今日海角大陆回家方式是否只有一条路径？</h3>
+          <p>不是。常规通道、备用入口与分段返回都算回家方式，区别在于适用场景与容错能力，按当前状态选择即可。</p>
+        </div>
+        <div class="faq-item">
+          <h3>分段返回会不会更慢？</h3>
+          <p>单次直达顺利时分段并不必要；但当路径不稳定时，分段能更快定位问题，整体试错成本反而更低。</p>
+        </div>
+        <div class="faq-item">
+          <h3>回家成功后还需要做什么？</h3>
+          <p>把当前可用入口记录下来，关闭多余页面，并核对状态是否一致。这一步能让下一次回家方式的选择更从容。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download" class="download-sec">
+    <div class="wrap">
+      <div class="dl-box">
+        <div class="dl-text">
+          <h2>保存回家方式速查文件</h2>
+          <p>将今日海角大陆回家方式的路线分类、四步流程与自查清单整理成一份可离线查看的速查文件，方便在通道波动时快速对照。</p>
+        </div>
+        <a class="btn btn-dl" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3 L12 15 M7 10.5 L12 15.5 L17 10.5" stroke="#1a2b1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 19.5 L20 19.5" stroke="#1a2b1f" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          下载
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3 L19 12 L15.5 12 L15.5 21 L8.5 21 L8.5 12 L5 12 Z" fill="#f5c56b"/>
+        </svg>
+        今日海角大陆回家方式
+      </div>
+      <nav class="foot-links" aria-label="页尾导航">
+        <a href="#routes">回家路线</a>
+        <a href="#steps">返回步骤</a>
+        <a href="#detail">通道说明</a>
+        <a href="#faq">常见疑问</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>今日海角大陆回家方式 · 路线与步骤按当前整理范围呈现</span>
+      <span>内容以实际通道状态为准</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
