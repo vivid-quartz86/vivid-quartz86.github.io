@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91免费观看-免费影视在线观看_高清资源无需注册</title>
+<meta name="description" content="91免费观看首页，汇集免费影视在线观看入口与高清资源分类，无需注册即可浏览片单、按类型筛选并直达播放页，同时提供使用说明与常见问题。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%23f59e0b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#0f172a;
+  --ink-2:#1e293b;
+  --muted:#5b6b82;
+  --line:#e3e8f0;
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --accent:#e8590c;
+  --accent-soft:#fff1e7;
+  --gold:#f59e0b;
+  --radius:16px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:inherit;text-decoration:none;}
+img,svg{display:block;max-width:100%;}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px;}
+
+/* Header */
+.site-header{
+  position:sticky;top:0;z-index:30;
+  background:rgba(15,23,42,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:12px 0;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(140deg,#f59e0b,#e8590c);
+  display:grid;place-items:center;flex:0 0 auto;
+}
+.brand-mark svg{width:19px;height:19px;}
+.brand-text{
+  color:#fff;font-size:19px;font-weight:700;letter-spacing:.5px;
+}
+.nav{display:flex;gap:6px;flex-wrap:wrap;}
+.nav a{
+  color:#cbd5e1;font-size:14.5px;padding:7px 12px;border-radius:9px;
+  transition:background .18s,color .18s;
+}
+.nav a:hover,.nav a:focus-visible{background:rgba(255,255,255,.12);color:#fff;}
+.nav a.cta{
+  background:var(--accent);color:#fff;font-weight:600;
+}
+.nav a.cta:hover{background:#d1490a;}
+
+/* Hero */
+.hero{
+  background:
+    radial-gradient(900px 380px at 85% -10%,rgba(245,158,11,.20),transparent 65%),
+    linear-gradient(160deg,#0f172a 0%,#182a44 60%,#1d3557 100%);
+  color:#fff;
+  padding:56px 0 48px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;right:-90px;bottom:-120px;
+  width:340px;height:340px;border-radius:50%;
+  border:34px solid rgba(245,158,11,.12);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;
+  position:relative;z-index:1;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;letter-spacing:1.5px;color:#fbbf24;
+  border:1px solid rgba(251,191,36,.45);
+  border-radius:999px;padding:5px 14px;margin-bottom:18px;
+}
+h1{
+  font-size:clamp(28px,4.6vw,44px);
+  line-height:1.25;margin:0 0 16px;font-weight:800;letter-spacing:1px;
+}
+.hero p.lead{
+  color:#cbd5e1;font-size:16.5px;margin:0 0 26px;max-width:34em;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:11px;font-size:15px;font-weight:600;
+  transition:transform .16s,background .18s,border-color .18s;
+}
+.btn-primary{background:var(--accent);color:#fff;}
+.btn-primary:hover{background:#d1490a;transform:translateY(-1px);}
+.btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff;}
+.btn-ghost:hover{background:rgba(255,255,255,.12);}
+.btn-disabled{
+  background:rgba(255,255,255,.16);color:#e2e8f0;
+  pointer-events:none;cursor:default;
+}
+.hero-stats{
+  display:flex;gap:26px;margin-top:30px;flex-wrap:wrap;
+  border-top:1px solid rgba(255,255,255,.14);padding-top:20px;
+}
+.hero-stats div strong{display:block;font-size:22px;color:#fbbf24;}
+.hero-stats div span{font-size:13px;color:#94a3b8;}
+
+/* Hero visual */
+.hero-art{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:20px;padding:18px;
+}
+.hero-art .screen{
+  border-radius:12px;overflow:hidden;background:#0b1220;
+  border:1px solid rgba(255,255,255,.1);
+}
+.hero-art .screen svg{width:100%;height:auto;}
+.chip-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;}
+.chip{
+  font-size:12.5px;color:#cbd5e1;background:rgba(255,255,255,.08);
+  padding:5px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.1);
+}
+
+/* Sections */
+section{padding:52px 0;}
+.section-head{margin-bottom:28px;max-width:44em;}
+.section-head h2{
+  font-size:clamp(21px,2.8vw,27px);margin:0 0 10px;font-weight:800;letter-spacing:.4px;
+}
+.section-head h2::before{
+  content:"";display:inline-block;width:6px;height:20px;border-radius:3px;
+  background:var(--accent);margin-right:11px;vertical-align:-3px;
+}
+.section-head p{margin:0;color:var(--muted);font-size:15.5px;}
+
+/* Cards */
+.grid{display:grid;gap:20px;}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;transition:box-shadow .2s,border-color .2s,transform .2s;
+}
+.card:hover{box-shadow:0 12px 28px -16px rgba(15,23,42,.28);border-color:#cfd9e6;}
+.card .icon{
+  width:42px;height:42px;border-radius:11px;background:var(--accent-soft);
+  display:grid;place-items:center;margin-bottom:14px;
+}
+.card .icon svg{width:21px;height:21px;stroke:var(--accent);}
+.card h3{margin:0 0 8px;font-size:17.5px;font-weight:700;}
+.card p{margin:0;font-size:14.8px;color:var(--muted);}
+
+/* Featured list */
+.feature-list{display:grid;gap:16px;grid-template-columns:repeat(2,1fr);}
+.feature{
+  display:flex;gap:16px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:18px;align-items:flex-start;
+}
+.feature .thumb{
+  flex:0 0 74px;height:74px;border-radius:10px;overflow:hidden;background:#0f172a;
+}
+.feature .thumb svg{width:100%;height:100%;}
+.feature h3{margin:0 0 5px;font-size:16px;font-weight:700;}
+.feature p{margin:0;font-size:14.2px;color:var(--muted);}
+.tag{
+  display:inline-block;font-size:12px;color:var(--accent);
+  background:var(--accent-soft);border-radius:6px;padding:2px 8px;margin-top:8px;
+}
+
+/* Filter */
+.filter-bar{
+  display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:14px 16px;margin-bottom:22px;
+}
+.filter-bar input{
+  flex:1 1 200px;min-width:0;font:inherit;font-size:14.5px;
+  padding:9px 13px;border:1px solid var(--line);border-radius:9px;
+  background:#fbfcfe;color:var(--ink);
+}
+.filter-bar input:focus{outline:2px solid rgba(232,89,12,.35);border-color:var(--accent);}
+.filter-bar button{
+  font:inherit;font-size:14.5px;font-weight:600;padding:9px 20px;
+  border-radius:9px;border:none;background:var(--ink);color:#fff;cursor:pointer;
+}
+.filter-bar button:hover{background:var(--ink-2);}
+.filter-tags{display:flex;gap:8px;flex-wrap:wrap;}
+.filter-tags button{
+  font:inherit;font-size:13.5px;padding:7px 15px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;
+  transition:all .16s;
+}
+.filter-tags button:hover{border-color:var(--accent);color:var(--accent);}
+.filter-tags button.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+.result-note{font-size:13.5px;color:var(--muted);margin:0 0 18px;}
+.item-count{font-weight:700;color:var(--accent);}
+
+/* Resource grid */
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.res{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;
+}
+.res .cover{aspect-ratio:16/9;background:#0f172a;position:relative;}
+.res .cover svg{width:100%;height:100%;}
+.res .body{padding:16px 18px 18px;}
+.res .body h3{margin:0 0 6px;font-size:16px;font-weight:700;}
+.res .body p{margin:0 0 12px;font-size:14px;color:var(--muted);}
+.res .meta{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:#8593a7;}
+.res .play{
+  font-size:13px;font-weight:600;color:var(--accent);
+  display:inline-flex;align-items:center;gap:5px;
+}
+.empty{
+  grid-column:1/-1;text-align:center;padding:44px 20px;color:var(--muted);
+  background:var(--card);border:1px dashed var(--line);border-radius:var(--radius);
+}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step;}
+.step{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;position:relative;
+}
+.step::before{
+  counter-increment:step;content:counter(step,decimal-leading-zero);
+  font-size:30px;font-weight:800;color:#e3e8f0;line-height:1;display:block;margin-bottom:12px;
+}
+.step h3{margin:0 0 8px;font-size:17px;font-weight:700;}
+.step p{margin:0;font-size:14.6px;color:var(--muted);}
+
+/* FAQ */
+.faq{display:grid;gap:14px;}
+details{
+  background:var(--card);border:1px solid var(--line);border-radius:13px;
+  padding:16px 20px;
+}
+details[open]{border-color:#cfd9e6;}
+summary{
+  cursor:pointer;font-weight:600;font-size:15.5px;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{
+  content:"+";font-size:19px;color:var(--accent);font-weight:700;line-height:1;
+}
+details[open] summary::after{content:"–";}
+details p{margin:12px 0 0;font-size:14.8px;color:var(--muted);}
+
+/* Notice */
+.notice{
+  background:linear-gradient(135deg,#fff7ed,#fff1e7);
+  border:1px solid #fed7aa;border-radius:var(--radius);
+  padding:24px 26px;display:flex;gap:16px;align-items:flex-start;
+}
+.notice svg{flex:0 0 26px;width:26px;height:26px;stroke:var(--accent);margin-top:2px;}
+.notice h3{margin:0 0 6px;font-size:16.5px;}
+.notice p{margin:0;font-size:14.6px;color:#7c4a1e;}
+
+/* Footer */
+.site-footer{
+  background:#0f172a;color:#94a3b8;padding:44px 0 28px;margin-top:20px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;
+  padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.site-footer .brand-text{font-size:17px;}
+.site-footer p{font-size:14px;line-height:1.8;margin:12px 0 0;max-width:30em;}
+.site-footer h4{color:#e2e8f0;font-size:14.5px;margin:0 0 12px;font-weight:700;letter-spacing:.5px;}
+.site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:14px;}
+.site-footer ul a:hover{color:#fbbf24;}
+.footer-bottom{
+  padding-top:20px;font-size:13px;color:#64748b;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:30px;}
+  .hero{padding:40px 0 36px;}
+  .grid-3,.res-grid,.steps{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+  body{font-size:15.5px;}
+  .header-inner{padding:10px 0;gap:10px;}
+  .nav a{padding:6px 9px;font-size:13.5px;}
+  .brand-text{font-size:17px;}
+  section{padding:38px 0;}
+  .grid-3,.grid-2,.res-grid,.steps,.feature-list{grid-template-columns:1fr;}
+  .hero-stats{gap:18px;}
+  .footer-grid{grid-template-columns:1fr;gap:24px;}
+  .filter-bar{padding:12px;}
+  .filter-bar button{width:100%;}
+  .card,.step{padding:20px;}
+  .notice{flex-direction:column;gap:10px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="91免费观看首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5l11 6.5-11 6.5z" fill="#ffffff"/></svg>
+      </span>
+      <span class="brand-text">91免费观看</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#pick">今日片单</a>
+      <a href="#library">免费片库</a>
+      <a href="#how">观看方式</a>
+      <a href="#faq">常见问题</a>
+      <a class="cta" href="#library">开始观看</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-label="首屏介绍">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">免费 · 免注册 · 即点即看</span>
+        <h1>91免费观看</h1>
+        <p class="lead">打开就能浏览片单，按类型、地区与年份挑选想看的内容，不必注册账号，也无需填写手机号。91免费观看把“找片—看片”压缩成一条直路，让每次访问都能尽快落到具体片目上。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#library">进入免费片库</a>
+          <a class="btn btn-ghost" href="#pick">查看今日片单</a>
+          <a class="btn btn-disabled" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>免注册</strong><span>无需账号即可浏览</span></div>
+          <div><strong>12 类</strong><span>片库类型分区</span></div>
+          <div><strong>3 步</strong><span>从筛选到播放</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="screen">
+          <svg viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="播放界面示意">
+            <rect width="400" height="225" fill="#0b1220"/>
+            <rect x="24" y="22" width="150" height="10" rx="5" fill="#334155"/>
+            <rect x="24" y="44" width="96" height="8" rx="4" fill="#1e293b"/>
+            <rect x="24" y="70" width="352" height="96" rx="8" fill="#152238"/>
+            <rect x="24" y="70" width="352" height="96" rx="8" fill="none" stroke="#24344f"/>
+            <circle cx="200" cy="118" r="26" fill="#e8590c" opacity="0.92"/>
+            <path d="M192 106l18 12-18 12z" fill="#ffffff"/>
+            <rect x="24" y="180" width="352" height="6" rx="3" fill="#1e293b"/>
+            <rect x="24" y="180" width="168" height="6" rx="3" fill="#f59e0b"/>
+            <circle cx="192" cy="183" r="6" fill="#ffffff"/>
+            <rect x="24" y="200" width="60" height="6" rx="3" fill="#334155"/>
+            <rect x="96" y="200" width="60" height="6" rx="3" fill="#334155"/>
+          </svg>
+        </div>
+        <div class="chip-row">
+          <span class="chip">电影</span><span class="chip">剧集</span>
+          <span class="chip">动漫</span><span class="chip">纪录片</span>
+          <span class="chip">综艺</span><span class="chip">短片</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pick">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>今日片单：先看什么</h2>
+        <p>片单按“想立刻看完”“适合连着看”“放着当背景”三种节奏排列，不追求数量堆叠，只保留能直接点开的内容。91免费观看的片单每天按热度与更新轮换。</p>
+      </div>
+      <div class="feature-list">
+        <article class="feature">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg"><rect width="74" height="74" fill="#1d3557"/><circle cx="37" cy="37" r="14" fill="none" stroke="#f59e0b" stroke-width="3"/><path d="M33 30l9 7-9 7z" fill="#f59e0b"/></svg>
+          </div>
+          <div>
+            <h3>一小时看完的剧情长片</h3>
+            <p>适合下班后一口气看完，节奏完整、结尾留有余味，不需要提前做功课。</p>
+            <span class="tag">电影 · 剧情</span>
+          </div>
+        </article>
+        <article class="feature">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg"><rect width="74" height="74" fill="#152238"/><rect x="16" y="22" width="42" height="8" rx="4" fill="#e8590c"/><rect x="16" y="36" width="30" height="6" rx="3" fill="#475569"/><rect x="16" y="48" width="36" height="6" rx="3" fill="#475569"/></svg>
+          </div>
+          <div>
+            <h3>适合连看的短剧集</h3>
+            <p>单集时长适中，集与集之间衔接紧密，适合周末一次性推进多集。</p>
+            <span class="tag">剧集 · 连续剧</span>
+          </div>
+        </article>
+        <article class="feature">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg"><rect width="74" height="74" fill="#1d3557"/><path d="M14 52c8-16 12-8 18-18s12 4 18-6 10 2 10 2" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>随手放着看的纪录片</h3>
+            <p>画面信息量大、解说平稳，不追情节也能看完，适合边做事边播放。</p>
+            <span class="tag">纪录片 · 人文</span>
+          </div>
+        </article>
+        <article class="feature">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg"><rect width="74" height="74" fill="#152238"/><circle cx="26" cy="30" r="9" fill="#e8590c"/><circle cx="48" cy="44" r="9" fill="#f59e0b"/><rect x="16" y="58" width="42" height="5" rx="2.5" fill="#475569"/></svg>
+          </div>
+          <div>
+            <h3>全家都能看的动画</h3>
+            <p>画风友好、情节清晰，不需要字幕也能跟上，适合与家人一起观看。</p>
+            <span class="tag">动漫 · 合家欢</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="library">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>免费片库：按条件挑片</h2>
+        <p>输入片名关键词，或点选下方类型标签，片库会即时筛选出对应条目。91免费观看的片库条目均为静态收录，不依赖登录状态。</p>
+      </div>
+
+      <div class="filter-bar" role="search">
+        <label for="kw" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">按片名搜索</label>
+        <input id="kw" type="search" placeholder="输入片名关键词，如“城市”“海岸”" autocomplete="off">
+        <button id="searchBtn" type="button">搜索片库</button>
+      </div>
+
+      <div class="filter-tags" id="tagRow" role="group" aria-label="类型筛选">
+        <button type="button" class="active" data-cat="全部">全部</button>
+        <button type="button" data-cat="电影">电影</button>
+        <button type="button" data-cat="剧集">剧集</button>
+        <button type="button" data-cat="动漫">动漫</button>
+        <button type="button" data-cat="纪录片">纪录片</button>
+        <button type="button" data-cat="综艺">综艺</button>
+      </div>
+
+      <p class="result-note" id="resultNote" style="margin-top:18px;">当前展示 <span class="item-count" id="count">6</span> 条片目，点击标签可缩小范围。</p>
+
+      <div class="res-grid" id="resGrid">
+        <article class="res" data-cat="电影" data-name="城市夜行">
+          <div class="cover" aria-hidden="true">
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="180" fill="#101a2c"/><rect x="30" y="70" width="36" height="80" fill="#1e293b"/><rect x="76" y="46" width="30" height="104" fill="#24344f"/><rect x="116" y="86" width="28" height="64" fill="#1e293b"/><rect x="154" y="58" width="34" height="92" fill="#24344f"/><rect x="198" y="78" width="26" height="72" fill="#1e293b"/><rect x="234" y="40" width="32" height="110" fill="#24344f"/><circle cx="262" cy="34" r="9" fill="#f59e0b"/></svg>
+          </div>
+          <div class="body">
+            <h3>城市夜行</h3>
+            <p>一名夜间代驾在交班前接到最后一单，路线把他带回多年未去的街区。</p>
+            <div class="meta"><span>电影 · 剧情</span><span class="play">▶ 在线观看</span></div>
+          </div>
+        </article>
+        <article class="res" data-cat="剧集" data-name="长夜值班室">
+          <div class="cover" aria-hidden="true">
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="180" fill="#0d1626"/><rect x="24" y="30" width="272" height="120" rx="8" fill="#152238" stroke="#24344f"/><rect x="44" y="50" width="110" height="10" rx="5" fill="#e8590c"/><rect x="44" y="72" width="180" height="8" rx="4" fill="#334155"/><rect x="44" y="90" width="150" height="8" rx="4" fill="#334155"/><rect x="44" y="108" width="200" height="8" rx="4" fill="#334155"/></svg>
+          </div>
+          <div class="body">
+            <h3>长夜值班室</h3>
+            <p>十二集短剧，围绕一间深夜值班室展开，每集一位来访者、一个未说完的故事。</p>
+            <div class="meta"><span>剧集 · 短剧</span><span class="play">▶ 在线观看</span></div>
+          </div>
+        </article>
+        <article class="res" data-cat="动漫" data-name="纸飞机航线">
+          <div class="cover" aria-hidden="true">
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="180" fill="#12233d"/><circle cx="248" cy="52" r="26" fill="#f59e0b" opacity="0.85"/><path d="M40 120l70-44 44 30 60-46 66 40" fill="none" stroke="#475569" stroke-width="4" stroke-linejoin="round"/><path d="M120 118l26-18 20 14-24 16z" fill="#ffffff"/></svg>
+          </div>
+          <div class="body">
+            <h3>纸飞机航线</h3>
+            <p>两个孩子用纸飞机交换消息，风把他们的路线带向同一片天空。</p>
+            <div class="meta"><span>动漫 · 治愈</span><span class="play">▶ 在线观看</span></div>
+          </div>
+        </article>
+        <article class="res" data-cat="纪录片" data-name="海岸线笔记">
+          <div class="cover" aria-hidden="true">
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="180" fill="#0e1c2b"/><path d="M0 120c60-24 100 10 160-8s100 12 160-10v78H0z" fill="#1d3557"/><path d="M0 140c70-18 110 12 170-6s90 10 150-6v52H0z" fill="#24344f"/><circle cx="72" cy="46" r="14" fill="#f59e0b" opacity="0.8"/></svg>
+          </div>
+          <div class="body">
+            <h3>海岸线笔记</h3>
+            <p>六集人文纪录片，沿着海岸线走访渔村、灯塔与渡口，记录日常劳作。</p>
+            <div class="meta"><span>纪录片 · 人文</span><span class="play">▶ 在线观看</span></div>
+          </div>
+        </article>
+        <article class="res" data-cat="综艺" data-name="周末慢现场">
+          <div class="cover" aria-hidden="true">
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="180" fill="#131f33"/><rect x="34" y="44" width="60" height="92" rx="8" fill="#24344f"/><rect x="106" y="60" width="60" height="76" rx="8" fill="#1e293b"/><rect x="178" y="34" width="60" height="102" rx="8" fill="#24344f"/><rect x="250" y="66" width="40" height="70" rx="8" fill="#1e293b"/><circle cx="240" cy="150" r="7" fill="#e8590c"/></svg>
+          </div>
+          <div class="body">
+            <h3>周末慢现场</h3>
+            <p>不设淘汰的慢节奏综艺，嘉宾在小院里做饭、聊天、讲各自最近在做的事。</p>
+            <div class="meta"><span>综艺 · 生活</span><span class="play">▶ 在线观看</span></div>
+          </div>
+        </article>
+        <article class="res" data-cat="电影" data-name="回声车站">
+          <div class="cover" aria-hidden="true">
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="180" fill="#101a2c"/><rect x="0" y="128" width="320" height="52" fill="#152238"/><rect x="40" y="36" width="240" height="76" rx="6" fill="#1e293b" stroke="#24344f"/><rect x="58" y="54" width="90" height="8" rx="4" fill="#e8590c"/><rect x="58" y="74" width="150" height="7" rx="3.5" fill="#334155"/><rect x="58" y="90" width="120" height="7" rx="3.5" fill="#334155"/></svg>
+          </div>
+          <div class="body">
+            <h3>回声车站</h3>
+            <p>一座即将停用的小站，站务员与最后几位旅客在候车室里度过了整晚。</p>
+            <div class="meta"><span>电影 · 剧情</span><span class="play">▶ 在线观看</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="empty" id="emptyTip" hidden>没有匹配的片目，换个关键词或点“全部”看看完整片库。</div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>观看方式：三步落到片目</h2>
+        <p>91免费观看的页面结构以“减少跳转”为目标：筛选在前面，片目在中间，播放入口贴在条目上。</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <h3>先定范围</h3>
+          <p>用类型标签或片名关键词缩小范围。不确定想看什么时，从今日片单里按观看节奏挑一条。</p>
+        </article>
+        <article class="step">
+          <h3>再看简介</h3>
+          <p>每条片目都附一句内容摘要与类型标注，判断是否对胃口，不需要先点进去试。</p>
+        </article>
+        <article class="step">
+          <h3>直接播放</h3>
+          <p>认准条目右下角的播放入口，进入播放页即可观看，全程不要求注册或登录。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="notice">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+        <div>
+          <h3>关于片源与更新</h3>
+          <p>页面收录的片目与分类会随片库调整而变化，具体可看内容以片库实际展示为准。91免费观看不在页面内嵌入第三方播放器，播放行为发生在对应片目的播放页。若某条片目暂时打不开，可以回到片库换一条同类内容。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p>下面是访问者最常提出的四个问题，答案围绕实际使用流程，不涉及账号体系。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>看片需要注册或付费吗？</summary>
+          <p>浏览片单、查看简介与进入播放页都不需要注册账号，也不要求填写手机号。91免费观看以免费浏览为基本设定，页面上的“下载”按钮目前为占位状态，点击不会触发任何操作。</p>
+        </details>
+        <details>
+          <summary>片库里的内容会一直保留吗？</summary>
+          <p>片库条目会随片源情况调整，部分片目可能下架或更换。建议先浏览当日片单与分类列表，以页面当下展示的条目为准。</p>
+        </details>
+        <details>
+          <summary>手机上能正常使用吗？</summary>
+          <p>页面针对小屏做过布局适配：导航会换行、片库卡片改为单列、筛选标签自动折行，正文行宽也做了收缩，手机上可以直接搜索和筛选。</p>
+        </details>
+        <details>
+          <summary>为什么有的片目点开没有画面？</summary>
+          <p>播放页由对应片源提供，可能受网络或片源状态影响。可以先返回片库选择其他条目，或稍后再试同一片目。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5l11 6.5-11 6.5z" fill="#ffffff"/></svg>
+          </span>
+          <span class="brand-text">91免费观看</span>
+        </a>
+        <p>一个以免费浏览为核心的影视片单页，按类型与关键词筛选，直达片目播放页。91免费观看持续整理可用条目，让找片这件事更短一点。</p>
+      </div>
+      <div>
+        <h4>站内导航</h4>
+        <ul>
+          <li><a href="#pick">今日片单</a></li>
+          <li><a href="#library">免费片库</a></li>
+          <li><a href="#how">观看方式</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>片库分类</h4>
+        <ul>
+          <li><a href="#library">电影</a></li>
+          <li><a href="#library">剧集</a></li>
+          <li><a href="#library">动漫</a></li>
+          <li><a href="#library">纪录片</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 91免费观看 · 页面内容以实际展示为准</span>
+      <span>免费浏览 · 无需注册</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var grid = document.getElementById('resGrid');
+  var items = Array.prototype.slice.call(grid.querySelectorAll('.res'));
+  var tagRow = document.getElementById('tagRow');
+  var kw = document.getElementById('kw');
+  var searchBtn = document.getElementById('searchBtn');
+  var countEl = document.getElementById('count');
+  var note = document.getElementById('resultNote');
+  var emptyTip = document.getElementById('emptyTip');
+  var activeCat = '全部';
+
+  function apply(){
+    var term = (kw.value || '').trim().toLowerCase();
+    var shown = 0;
+    items.forEach(function(el){
+      var catOk = (activeCat === '全部') || (el.getAttribute('data-cat') === activeCat);
+      var name = (el.getAttribute('data-name') || '').toLowerCase();
+      var text = el.textContent.toLowerCase();
+      var kwOk = !term || name.indexOf(term) > -1 || text.indexOf(term) > -1;
+      var visible = catOk && kwOk;
+      el.style.display = visible ? '' : 'none';
+      if(visible) shown++;
+    });
+    countEl.textContent = shown;
+    emptyTip.hidden = shown !== 0;
+    if(term){
+      note.innerHTML = '关键词“' + escapeHtml(kw.value.trim()) + '”匹配到 <span class="item-count">' + shown + '</span> 条片目。';
+    }else{
+      note.innerHTML = '当前展示 <span class="item-count">' + shown + '</span> 条片目，点击标签可缩小范围。';
+    }
+  }
+
+  function escapeHtml(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  tagRow.addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-cat]');
+    if(!btn) return;
+    Array.prototype.forEach.call(tagRow.querySelectorAll('button'), function(b){
+      b.classList.toggle('active', b === btn);
+    });
+    activeCat = btn.getAttribute('data-cat');
+    apply();
+  });
+
+  searchBtn.addEventListener('click', apply);
+  kw.addEventListener('input', apply);
+  kw.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); apply(); }
+  });
+
+  apply();
+})();
+</script>
+
+</body>
+          </html>
